@@ -1,18 +1,18 @@
 #!/bin/bash
 # SE-AGCNet Training Script
 
-# cd /home/ccds-jmzhang/SE-AGCNet
+# cd /path/to/SE-AGCNet
 
 
 # Data paths (modify these)
-TRAIN_NOISY_DIR="/home/ccds-jmzhang/LibriAGC/train/lower_noisy"    # noisy and volume-unbalanced audio (input)
-TRAIN_CLEAN_DIR="/home/ccds-jmzhang/LibriAGC/train/lower_clean"    # clean and volume-unbalanced audio (SE target)
-TRAIN_ORIGIN_DIR="/home/ccds-jmzhang/LibriAGC/train/origin_noisy"  # clean and volume-balanced audio (AGC target)
+TRAIN_NOISY_DIR="/path/to/LibriAGC/train/lower_noisy"    # noisy and volume-unbalanced audio (input)
+TRAIN_CLEAN_DIR="/path/to/LibriAGC/train/lower_clean"    # clean and volume-unbalanced audio (SE target)
+TRAIN_ORIGIN_DIR="/path/to/LibriAGC/train/origin_noisy"  # clean and volume-balanced audio (AGC target)
 
-TEST_CLEAN_DIR="/home/ccds-jmzhang/LibriAGC/validate/lower_clean"
-TEST_NOISY_DIR="/home/ccds-jmzhang/LibriAGC/validate/lower_noisy"
+TEST_CLEAN_DIR="/path/to/LibriAGC/validate/lower_clean"
+TEST_NOISY_DIR="/path/to/LibriAGC/validate/lower_noisy"
 
-CHECKPOINT_DIR="/home/ccds-jmzhang/test"
+CHECKPOINT_DIR="/path/to/checkpoints"
 CONFIG_FILE="./SE_AGCNet/config.json"
 
 # Training parameters

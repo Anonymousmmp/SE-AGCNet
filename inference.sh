@@ -1,13 +1,13 @@
 #!/bin/bash
 # SE-AGCNet Inference Script
 
-# cd /home/ccds-jmzhang/SE-AGCNet
+# cd /path/to/SE-AGCNet
 
 # Required paths (modify these)
 CHECKPOINT="./SE_AGCNet/ckpt/LibriAGC/g_00102000"
 CONFIG="./SE_AGCNet/config.json"
-INPUT_PATH="/home/ccds-jmzhang/10samples/noisy"       
-OUTPUT_PATH="/home/ccds-jmzhang/10samples/enhanced"   
+INPUT_PATH="/path/to/input"       
+OUTPUT_PATH="/path/to/output"   
 
 # Optional parameters
 MAX_LENGTH=32000  # Segment length in samples (2s at 16kHz)

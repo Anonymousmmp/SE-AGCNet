@@ -449,13 +449,13 @@ def main():
     
     parser = argparse.ArgumentParser()
     parser.add_argument('--group_name', default=None)
-    parser.add_argument('--input_train_clean_dir', default='/home/ccds-jmzhang/10samples/clean')
-    parser.add_argument('--input_train_noisy_dir', default='/home/ccds-jmzhang/10samples/noisy')
-    parser.add_argument('--input_train_origin_dir', default='/home/ccds-jmzhang/10samples/noisy')
-    parser.add_argument('--input_test_clean_dir', default='/home/ccds-jmzhang/10samples/clean')
-    parser.add_argument('--input_test_noisy_dir', default='/home/ccds-jmzhang/10samples/noisy')
-    parser.add_argument('--checkpoint_path', default='/home/ccds-jmzhang/test')
-    parser.add_argument('--config', default='/home/ccds-jmzhang/SE-AGCNet/SE_AGCNet/config.json')
+    parser.add_argument('--input_train_clean_dir', default='/path/to/train/clean')
+    parser.add_argument('--input_train_noisy_dir', default='/path/to/train/noisy')
+    parser.add_argument('--input_train_origin_dir', default='/path/to/train/origin')
+    parser.add_argument('--input_test_clean_dir', default='/path/to/test/clean')
+    parser.add_argument('--input_test_noisy_dir', default='/path/to/test/noisy')
+    parser.add_argument('--checkpoint_path', default='/path/to/checkpoints')
+    parser.add_argument('--config', default='./SE_AGCNet/config.json')
     
     parser.add_argument('--training_epochs', default=400, type=int)
     parser.add_argument('--stdout_interval', default=10, type=int)
@@ -507,4 +507,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-

@@ -31,7 +31,7 @@ random.seed(GLOBAL_RANDOM_SEED)
 np.random.seed(GLOBAL_RANDOM_SEED)
 
 # Configure data paths (will be set by command line argument)
-DATA_BASE_DIR = '/home/users/ntu/ccdsjmzh/scratch'
+DATA_BASE_DIR = '/path/to/LibriTTS'
 
 
 def batch_process_libritts_dataset(dataset_type='train', data_base_dir=None, output_dir=None):
