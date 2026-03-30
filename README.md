@@ -1,10 +1,5 @@
 # SE-AGCNet
 
-## Dataset
-
-The VoiceBankAGC dataset can be downloaded from:
-[VoiceBankAGC](https://drive.google.com/drive/folders/12naNULZmxpUD7x06fQmLgCZXuH6-qxgD?usp=sharing)
-
 ## Quick Start
 
 ### Training
@@ -23,15 +18,14 @@ For inference with pre-trained models, please refer to:
 ./inference.sh
 ```
 
-Two pre-trained models are included at `./SE_AGCNet/ckpt`.
+One pre-trained model is included at `./SE_AGCNet/ckpt`.
 
 ### Data Generation
 
-For details on SE-AGC data generation, please refer to the `DATAGEN/` directory.
+For details on SE-AGC data generation with LibriTTS, please refer to the `DATAGEN/` directory.
 
 ## PyAGC
 
 The `pyagc/` directory contains the Python 3 implementation of time-frequency automatic gain control. See `pyagc/README.md` for more details.
-
 
 

@@ -5,7 +5,6 @@ Generate multi-speaker audio combinations for AGC speech enhancement training.
 ## Datasets
 
 - **LibriTTS**: https://www.openslr.org/60/
-- **VoiceBank-Demand(use '28spk')**: https://datashare.ed.ac.uk/handle/10283/2791  
 
 ## Requirements
 
@@ -26,20 +25,7 @@ python LibriAGC_gen.py \
 
 Or use the script:
 ```bash
-bash run_libriagc_gen.sh
-```
-
-### VoiceBank-Demand
-
-```bash
-python VoiceBankAGC_gen.py \
-    --data_dir /path/to/voicebank-demand \
-    --output_dir /path/to/output
-```
-
-Or:
-```bash
-bash run_voicebank_gen.sh
+bash run_libritts_gen.sh
 ```
 
 ## How it works
@@ -67,5 +53,4 @@ Augmentation (15% each):
 ├── rttm/             # LibriTTS only
 └── metadata/
 ```
-
 
